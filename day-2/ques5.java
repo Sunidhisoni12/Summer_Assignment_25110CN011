@@ -1,27 +1,17 @@
 // Que.5  Write a program to Find sum of digits of a number.
-
 import java.util.*;
 
 public class ques5 {
-
-    public static int reverse(int a) {
-
-        int reverse = 0;
-        while (a > 0) {
-            int lastDigit = a % 10;
-            reverse = reverse * 10 + lastDigit;
-            a /= 10;
-        }
-        return reverse;
-    }
-
-    public static void main(String[] args) {
-
+    public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the  number : ");
-        int a = sc.nextInt();
-        int result = reverse(a);
-        System.out.println("Reverse of a number is: " + result);
+        int num = sc.nextInt();
+        int num1=num;
+        int sum=0;
+        while(num>0){
+            num1=num%10;
+            sum+=num1;
+            num=num/10;
+        }
+        System.out.println("the sum of the digits of number num is = "+sum);
     }
-
 }
