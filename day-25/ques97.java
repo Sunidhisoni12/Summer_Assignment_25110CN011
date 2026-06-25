@@ -1,4 +1,4 @@
-//ques99. write a program to merge two sorted array 
+//ques97. write a program to merge two sorted array 
 import java.util.*;
 
 public class ques97 {
